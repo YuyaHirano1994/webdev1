@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      :root {
+        --primary-bg: rgba(44, 62, 80, 1);
+        --secondary-bg: rgba(0, 0, 0, 0.9);
+        --box-shadow-color-1: gold;
+        --box-shadow-color-2: rgba(149, 165, 166, 0.1);
+        --box-shadow-color-3: #ecf0f1;
+        --phone-width: 350px;
+        --phone-height: 700px;
+      }
+
+      body {
+        background-color: var(--secondary-bg);
+      }
+
+      .phone {
+        background-color: var(--secondary-bg);
+        width: var(--phone-width);
+        height: var(--phone-height);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        margin: 50px auto;
+        border-radius: 45px;
+        position: relative;
+        box-shadow: inset 1px 2px 1px var(--box-shadow-color-1),
+                          1px 7px 1px var(--box-shadow-color-2); 
+      }
+
+      .screen{
+        background-color: var(--primary-bg);
+        width: 300px;
+        height: 550px;
+      }
+
+      .camera div{
+        border-radius: 50px;
+        background-color: var(--primary-bg);
+      }
+
+      .camera div:first-child{
+        top: 20px;
+        left: 175px;
+        width: 5px;
+        height: 5px;
+        position: absolute;
+      }
+
+      .camera div:nth-child(2) {
+        position: absolute;
+        top: 30px;
+        left: 130px;
+        width: 7px;
+        height: 7px;
+      }
+
+      .camera div:last-child {
+        top: 32px;
+        left: 154px;
+        width: 50px;
+        height: 8px;
+        position: absolute;
+      }
+      
+      .button {
+        position: absolute;
+        top: 625px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-top: 20px;
+        box-shadow: inset 1px -1px 0 var(--box-shadow-color-1),
+                    0px -1px 0 var(--box-shadow-color-3);
+      }
+      
+
+    </style>
+    <title>202</title>
+  </head>
+    <div class="phone">
+      <div class="camera">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="button">
+      </div>
+      <div class="screen">
+      </div>
+    </div>
+  </body>
+</html>
