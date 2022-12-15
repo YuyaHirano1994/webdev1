@@ -63,6 +63,8 @@ main {
   height: 20rem;
   text-align: center;
   margin-top: 5rem;
+  font-size: 8rem;
+  font-weight: 700;
 }
 
 .top-cover {
@@ -77,8 +79,6 @@ main img {
 }
 
 .title {
-  font-size: 8rem;
-  font-weight: 700;
 }
 
 footer {
@@ -111,6 +111,8 @@ footer {
     text-align: center;
     margin-top: 5rem;
     z-index: 1;
+    font-size: 5rem;
+    font-weight: 700;
   }
 
   .top-cover {
@@ -129,11 +131,6 @@ footer {
     height: 100%;
   }
 
-  .title {
-    font-size: 5rem;
-    font-weight: 700;
-  }
-
   footer {
     border: 1px solid red;
     background-color: black;
@@ -142,12 +139,10 @@ footer {
     width: 100%;
   }
 
-  /* チェックボックスを非表示にする */
   .drawer_hidden {
     display: none;
   }
 
-  /* ハンバーガーアイコンの設置スペース */
   .drawer_open {
     /* border: 1px solid red; */
     display: flex;
@@ -156,11 +151,10 @@ footer {
     justify-content: right;
     align-items: center;
     position: relative;
-    z-index: 100; /* 重なり順を一番上にする */
+    z-index: 100;
     cursor: pointer;
   }
 
-  /* ハンバーガーメニューのアイコン */
   .drawer_open span,
   .drawer_open span:before,
   .drawer_open span:after {
@@ -174,22 +168,18 @@ footer {
     position: absolute;
   }
 
-  /* 三本線の一番上の棒の位置調整 */
   .drawer_open span:before {
     bottom: 8px;
   }
 
-  /* 三本線の一番下の棒の位置調整 */
   .drawer_open span:after {
     top: 8px;
   }
 
-  /* アイコンがクリックされたら真ん中の線を透明にする */
   #drawer_input:checked ~ .drawer_open span {
     background: rgba(255, 255, 255, 0);
   }
 
-  /* アイコンがクリックされたらアイコンが×印になように上下の線を回転 */
   #drawer_input:checked ~ .drawer_open span::before {
     bottom: 0;
     transform: rotate(45deg);
@@ -200,7 +190,6 @@ footer {
     transform: rotate(-45deg);
   }
 
-  /* メニューのデザイン*/
   .nav_content {
     /* float: right; */
     width: 50%;
@@ -216,7 +205,6 @@ footer {
     transition: 0.5s;
   }
 
-  /* メニュー黒ポチを消す */
   .nav_list {
     display: block;
     /* border: 1px solid red; */
@@ -233,9 +221,8 @@ footer {
     display: block;
   }
 
-  /* アイコンがクリックされたらメニューを表示 */
   #drawer_input:checked ~ .nav_content {
-    left: 0; /* メニューを画面に入れる */
+    left: 0;
   }
 }
 
@@ -255,6 +242,8 @@ footer {
     text-align: left;
     margin-top: 5rem;
     z-index: 1;
+    font-size: 5rem;
+    font-weight: 700;
   }
 
   .top-cover {
@@ -270,11 +259,6 @@ footer {
     height: 100%;
   }
 
-  .title {
-    font-size: 5rem;
-    font-weight: 700;
-  }
-
   footer {
     border: 1px solid red;
     background-color: black;
@@ -283,12 +267,10 @@ footer {
     width: 100%;
   }
 
-  /* チェックボックスを非表示にする */
   .drawer_hidden {
     display: none;
   }
 
-  /* ハンバーガーアイコンの設置スペース */
   .drawer_open {
     /* border: 1px solid red; */
     display: flex;
@@ -297,11 +279,10 @@ footer {
     justify-content: right;
     align-items: center;
     position: relative;
-    z-index: 100; /* 重なり順を一番上にする */
+    z-index: 100;
     cursor: pointer;
   }
 
-  /* ハンバーガーメニューのアイコン */
   .drawer_open span,
   .drawer_open span:before,
   .drawer_open span:after {
@@ -315,22 +296,18 @@ footer {
     position: absolute;
   }
 
-  /* 三本線の一番上の棒の位置調整 */
   .drawer_open span:before {
     bottom: 8px;
   }
 
-  /* 三本線の一番下の棒の位置調整 */
   .drawer_open span:after {
     top: 8px;
   }
 
-  /* アイコンがクリックされたら真ん中の線を透明にする */
   #drawer_input:checked ~ .drawer_open span {
     background: rgba(255, 255, 255, 0);
   }
 
-  /* アイコンがクリックされたらアイコンが×印になように上下の線を回転 */
   #drawer_input:checked ~ .drawer_open span::before {
     bottom: 0;
     transform: rotate(45deg);
@@ -341,7 +318,6 @@ footer {
     transform: rotate(-45deg);
   }
 
-  /* メニューのデザイン*/
   .nav_content {
     /* float: right; */
     width: 50%;
@@ -350,14 +326,13 @@ footer {
     opacity: 0.9;
     top: 0;
     left: 0;
-    left: 100%; /* メニューを画面の外に飛ばす */
+    left: 100%;
     margin-left: 50%;
     z-index: 99;
     background: #fff;
     transition: 0.5s;
   }
 
-  /* メニュー黒ポチを消す */
   .nav_list {
     display: block;
     /* border: 1px solid red; */
@@ -374,9 +349,8 @@ footer {
     display: block;
   }
 
-  /* アイコンがクリックされたらメニューを表示 */
   #drawer_input:checked ~ .nav_content {
-    left: 0; /* メニューを画面に入れる */
+    left: 0;
   }
 
   footer {

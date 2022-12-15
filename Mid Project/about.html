@@ -11,8 +11,40 @@
     <link rel="stylesheet" href="./css/destyle.css" />
     <meta name="viewport" content="width=device-width" />
     <style>
-      main div span {
-        color: red;
+      .about {
+        /* border: 1px solid red; */
+        width: 50%;
+        height: 20rem;
+        /* text-align: center; */
+        margin-top: 5rem;
+        font-size: 4rem;
+        font-weight: 700;
+        color: rgb(223, 91, 34);
+      }
+
+      @media screen and (max-width: 900px) {
+        .about {
+          /* position: relative; */
+          /* border: 1px solid red; */
+          margin-left: 10px;
+          width: 50%;
+          height: 20rem;
+          text-align: left;
+          margin-top: 5rem;
+          z-index: 1;
+          font-size: 2.5rem;
+        }
+      }
+
+      @media screen and (max-width: 640px) {
+        .about {
+          /* text-align: left; */
+          width: 100%;
+          /* text-align: center; */
+          margin-top: 5rem;
+          z-index: 1;
+          font-size: 2rem;
+        }
       }
     </style>
     <title>Zero Calorie Drinks Online</title>
@@ -39,8 +71,10 @@
     </header>
     <hr />
     <main>
-      <div class="top-cover"><img src="./images//zerocola.webp" alt="cocacolazero" /></div>
-      <div class="title">We Love<br /><span>Zero</span> Calories</div>
+      <div class="top-cover" id="about-image"><img src="./images/7up.jpeg" alt="cocacolazero" /></div>
+      <div class="about">
+        This site is about zero-calorie beverages. We love zero-calorie beverages. Don't you love them too?
+      </div>
     </main>
     <footer>
       <div class="copyright"><p>&copy; Yuya Hirano</p></div>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/destyle.css" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Zero Calorie Drinks Online</title>
+    <style>
+      body {
+        font-family: "Nunito Sans", sans-serif;
+      }
+
+      main {
+        /* border: 1px solid red; */
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 10%;
+        margin-bottom: 5%;
+      }
+
+      #img {
+        width: 100%;
+        height: 300px;
+      }
+
+      p {
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        margin: 60px auto 40px;
+      }
+      th {
+        background: #000000;
+        border: solid 1px #ccc;
+        color: rgb(255, 255, 255);
+        font-weight: 800;
+        padding: 10px;
+      }
+      td {
+        border: solid 1px #ccc;
+        padding: 10px;
+      }
+      @media screen and (max-width: 640px) {
+        .tbl-r03 {
+          width: 90%;
+        }
+        .tbl-r03 tr {
+          display: block;
+          float: left;
+        }
+        .tbl-r03 tr td,
+        .tbl-r03 tr th {
+          /* border: 1px solid red; */
+          border-left: none;
+          display: block;
+          height: 300px;
+          margin-left: 10px;
+        }
+
+        #img {
+          width: 100%;
+          height: 150px;
+        }
+        .tbl-r03 thead {
+          display: block;
+          float: left;
+          width: 30%;
+        }
+        .tbl-r03 thead tr {
+          width: 100%;
+        }
+        .tbl-r03 tbody {
+          display: block;
+          float: left;
+          width: 70%;
+        }
+        .tbl-r03 tbody tr {
+          width: 50%;
+        }
+        .tbl-r03 tr td + td {
+          border-left: none;
+        }
+        .tbl-r03 tbody td:last-child {
+          border-bottom: solid 1px #ccc;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">Good <span>Zero</span> Calories</div>
+
+      <nav>
+        <input id="drawer_input" class="drawer_hidden" type="checkbox" />
+
+        <label for="drawer_input" class="drawer_open"><span></span></label>
+
+        <nav class="nav_content" id="contents">
+          <ul class="nav_list" id="lists">
+            <li class="nav_item"><a href="./index.html">Home</a></li>
+            <li class="nav_item"><a href="./about.html">About</a></li>
+            <li class="nav_item"><a href="./review.html">Review</a></li>
+          </ul>
+        </nav>
+
+        <ul></ul>
+      </nav>
+    </header>
+    <hr />
+    <main>
+      <div>
+        <table class="tbl-r03">
+          <thead>
+            <tr>
+              <th>No.1</th>
+              <th>No.2</th>
+              <th>No.3</th>
+              <th>No.4</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><img src="./images/zerocolacan.png" alt="zerocola" id="img" /></td>
+              <td><img src="./images/monster.png" alt="monster" id="img" /></td>
+              <td><img src="./images/zevia.png" alt="zevia" id="img" /></td>
+              <td><img src="./images/7up.jpeg" alt="7up" id="img" /></td>
+            </tr>
+            <tr class="last">
+              <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, voluptate.</td>
+              <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, voluptate.</td>
+              <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, voluptate.</td>
+              <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, voluptate.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+    <footer>
+      <div class="copyright"><p>&copy; Yuya Hirano</p></div>
+    </footer>
+  </body>
+</html>
