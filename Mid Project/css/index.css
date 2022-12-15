@@ -78,9 +78,6 @@ main img {
   height: 100%;
 }
 
-.title {
-}
-
 footer {
   /* border: 1px solid red; */
   background-color: black;
@@ -132,7 +129,7 @@ footer {
   }
 
   footer {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     background-color: black;
     color: white;
     text-align: center;
@@ -260,7 +257,6 @@ footer {
   }
 
   footer {
-    border: 1px solid red;
     background-color: black;
     color: white;
     text-align: center;
