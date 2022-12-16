@@ -12,20 +12,22 @@
     <meta name="viewport" content="width=device-width" />
     <style>
       .about {
-        /* border: 1px solid red; */
         width: 50%;
         height: 20rem;
-        /* text-align: center; */
         margin-top: 5rem;
         font-size: 4rem;
         font-weight: 700;
-        color: rgb(223, 91, 34);
+        padding: 10px;
+        color: white;
+        background-color: rgb(124, 162, 123);
+      }
+
+      .about span {
+        color: crimson;
       }
 
       @media screen and (max-width: 900px) {
         .about {
-          /* position: relative; */
-          /* border: 1px solid red; */
           margin-left: 10px;
           width: 50%;
           height: 20rem;
@@ -38,9 +40,6 @@
 
       @media screen and (max-width: 640px) {
         .about {
-          /* text-align: left; */
-          width: 100%;
-          /* text-align: center; */
           margin-top: 5rem;
           z-index: 1;
           font-size: 2rem;
@@ -73,7 +72,8 @@
     <main>
       <div class="top-cover" id="about-image"><img src="./images/7up.jpeg" alt="cocacolazero" /></div>
       <div class="about">
-        This site is about zero-calorie beverages. We love zero-calorie beverages. Don't you love them too?
+        This site is about zero-calorie beverages.<br />
+        We love zero-calorie beverages. <br /><br /><span>Don't you love them too?</span>
       </div>
     </main>
     <footer>
