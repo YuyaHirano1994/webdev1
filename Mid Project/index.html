@@ -12,7 +12,30 @@
     <meta name="viewport" content="width=device-width" />
     <style>
       main div span {
-        color: red;
+        color: white;
+      }
+
+      .anime {
+        display: flex;
+        animation-name: fadeInAnime;
+        animation-fill-mode: backwards;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-delay: 0.2s;
+        animation-direction: normal;
+      }
+
+      @keyframes fadeInAnime {
+        0% {
+          opacity: 0%;
+          transform: translateX(100px);
+        }
+
+        100% {
+          opacity: 100%;
+          transform: translateX(0px);
+        }
       }
     </style>
     <title>Zero Calorie Drinks Online</title>
@@ -40,7 +63,10 @@
     <hr />
     <main>
       <div class="top-cover"><img src="./images//zerocola.webp" alt="cocacolazero" /></div>
-      <div class="title">We Love<br /><span>Zero</span> Calories</div>
+      <div class="title">
+        We Love<br /><span>Zero</span> Calories
+        <div class="anime">←</div>
+      </div>
     </main>
     <footer>
       <div class="copyright"><p>&copy; Yuya Hirano</p></div>
